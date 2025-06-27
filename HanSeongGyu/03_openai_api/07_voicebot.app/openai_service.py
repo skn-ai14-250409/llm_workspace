@@ -1,5 +1,5 @@
-# from dotenv import load_dotenv
-# load_dotenv()   # .env의 내용을 읽어서 환경변수로 설정
+from dotenv import load_dotenv
+load_dotenv()   # .env의 내용을 읽어서 환경변수로 설정
 # streamlit-cloud 에서는 .env를 사용할 수 없으므로,
 # secrets설정(TOML)에 OPENAI_API_KEY를 설정해야한다.
 # OPENAI_API_KEY='키'
