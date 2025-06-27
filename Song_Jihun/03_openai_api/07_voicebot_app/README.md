@@ -3,7 +3,7 @@
   1. 이게 streamlit-cloud 환경에는 설치가 안되어있을거기 때문에, packages.txt 파일을 만들어서 알려줘야 한다.
 3. 그러고나서<br/>
    ```commandline
-   pip list --format=freeze > requirements.txt
+   pip list --format=freeze | findstr /V "win32 pypiwin32 pywin32 pywinauto pywinpty" > requirements.txt
    ```
    이걸로 python 에 필요한 패키지 목록을 명시해줘야 한다.
 4. requirements.txt 에 windows 관련 패키지는 없는지 확인하고, 있으면 삭제해야 streamlit-cloud 에 배포할 수 있다.
